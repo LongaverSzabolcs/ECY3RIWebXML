@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<class>
+    <student id="01">
+        <keresztnev>jani</keresztnev>
+        <vezeteknev>feri</vezeteknev>
+        <becenev>asdefhgnkg</becenev>
+        <kor>456684</kor>
+    </student>
+    <student id="02">
+        <keresztnev>KIS</keresztnev>
+        <vezeteknev>FEJ</vezeteknev>
+        <becenev>n</becenev>
+        <kor>1</kor>
+    </student>
+    <student id="03">
+        <keresztnev>vvvvv</keresztnev>
+        <vezeteknev>eeeee</vezeteknev>
+        <becenev>rrrrr</becenev>
+        <kor>2006</kor>
+    </student>
+    <student id="04">
+        <keresztnev>Tolatoradar</keresztnev>
+        <vezeteknev>Utvefuro</vezeteknev>
+        <becenev>Ilona</becenev>
+        <kor>99</kor>
+    </student>
+    <student id="05">
+        <keresztnev>LÉZER JÁN</keresztnev>
+        <vezeteknev>OS A JÓ K</vezeteknev>
+        <becenev>Click here to insert text</becenev>
+        <kor>69</kor>
+    </student>
+</class>
