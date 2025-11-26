@@ -1,0 +1,91 @@
+ID: 0
+WebTech (elm)
+Hetfo, 10 - 12
+Helyszin: E5
+Oktato: ?
+Szak: Mérnökinformatikus BSC
+
+ID: 1
+Angol (elm)
+Hetfo, 12 - 14
+Helyszin: ?
+Oktato: ?
+Szak: Mérnökinformatikus BSC
+
+ID: 2
+WebTech (gyk)
+Hetfo, 14 - 16
+Helyszin: L101
+Oktato: ?
+Szak: Mérnökinformatikus BSC
+
+ID: 3
+Mobil (elm)
+Hetfo, 16 - 18
+Helyszin: L101
+Oktato: ?
+Szak: Mérnökinformatikus BSC
+
+ID: 4
+Mobil (gyk)
+Hetfo, 18 - 20
+Helyszin: L101
+Oktato: ?
+Szak: Mérnökinformatikus BSC
+
+ID: 5
+Windows Rendszergizda (elm)
+Kedd, 08 - 10
+Helyszin: L103
+Oktato: Dr. Wagner GyÃ¶rgy
+Szak: Mérnökinformatikus BSC
+
+ID: 6
+Mesterséges Intelligencia (elm)
+Kedd, 10 - 12
+Helyszin: E32
+Oktato: ?
+Szak: Mérnökinformatikus BSC
+
+ID: 7
+Mesterséges Intelligencia (gyk)
+Kedd, 12 - 14
+Helyszin: E32
+Oktato: ?
+Szak: Mérnökinformatikus BSC
+
+ID: 8
+Windows Rendszergazda (gyk)
+Kedd, 16 - 18
+Helyszin: L103
+Oktato: Dr. Wagner György
+Szak: Mérnökinformatikus BSC
+
+ID: 9
+WebKezel (elm)
+Szerda, 08 - 10
+Helyszin: A1/310
+Oktato: Dr. Kovács László
+Szak: Mérnökinformatikus BSC
+
+ID: 10
+WebKezel (gyk)
+Szerda, 10 - 12
+Helyszin: L101
+Oktato: Dr. Bednarik László
+Szak: Mérnökinformatikus BSC
+
+ID: 11
+Valószínûségszámítás és matematikai statisztika (elm)
+Kedd, 10 - 12
+Helyszin: E32
+Oktato: ?
+Szak: Mérnökinformatikus BSC
+
+ID: 12
+Valószínûségszámítás és matematikai statisztika (gyk)
+Szerda, 14 - 16
+Helyszin: A1/315
+Oktato: ?
+Szak: Mérnökinformatikus BSC
+

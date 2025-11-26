@@ -1,0 +1,175 @@
+{
+	"orarend": {
+		"ora": [
+			{
+				"targy": "WebTech",
+				"idopont": {
+					"nap": "Hetfo",
+					"tol": "10",
+					"ig": "12"
+				},
+				"helyszin": "E5",
+				"oktato": "?",
+				"szak": "Mérnökinformatikus BSC",
+				"_id": "0",
+				"_tipus": "elm"
+			},
+			{
+				"targy": "Angol",
+				"idopont": {
+					"nap": "Hetfo",
+					"tol": "12",
+					"ig": "14"
+				},
+				"helyszin": "?",
+				"oktato": "?",
+				"szak": "Mérnökinformatikus BSC",
+				"_id": "1",
+				"_tipus": "elm"
+			},
+			{
+				"targy": "WebTech",
+				"idopont": {
+					"nap": "Hetfo",
+					"tol": "14",
+					"ig": "16"
+				},
+				"helyszin": "L101",
+				"oktato": "?",
+				"szak": "Mérnökinformatikus BSC",
+				"_id": "2",
+				"_tipus": "gyk"
+			},
+			{
+				"targy": "Mobil",
+				"idopont": {
+					"nap": "Hetfo",
+					"tol": "16",
+					"ig": "18"
+				},
+				"helyszin": "L101",
+				"oktato": "?",
+				"szak": "Mérnökinformatikus BSC",
+				"_id": "3",
+				"_tipus": "elm"
+			},
+			{
+				"targy": "Mobil",
+				"idopont": {
+					"nap": "Hetfo",
+					"tol": "18",
+					"ig": "20"
+				},
+				"helyszin": "L101",
+				"oktato": "?",
+				"szak": "Mérnökinformatikus BSC",
+				"_id": "4",
+				"_tipus": "gyk"
+			},
+			{
+				"targy": "Windows Rendszergizda",
+				"idopont": {
+					"nap": "Kedd",
+					"tol": "08",
+					"ig": "10"
+				},
+				"helyszin": "L103",
+				"oktato": "Dr. Wagner György",
+				"szak": "Mérnökinformatikus BSC",
+				"_id": "5",
+				"_tipus": "elm"
+			},
+			{
+				"targy": "Mesterséges Intelligencia",
+				"idopont": {
+					"nap": "Kedd",
+					"tol": "10",
+					"ig": "12"
+				},
+				"helyszin": "E32",
+				"oktato": "?",
+				"szak": "Mérnökinformatikus BSC",
+				"_id": "6",
+				"_tipus": "elm"
+			},
+			{
+				"targy": "Mesterséges Intelligencia",
+				"idopont": {
+					"nap": "Kedd",
+					"tol": "12",
+					"ig": "14"
+				},
+				"helyszin": "E32",
+				"oktato": "?",
+				"szak": "Mérnökinformatikus BSC",
+				"_id": "7",
+				"_tipus": "gyk"
+			},
+			{
+				"targy": "Windows Rendszergazda",
+				"idopont": {
+					"nap": "Kedd",
+					"tol": "16",
+					"ig": "18"
+				},
+				"helyszin": "L103",
+				"oktato": "Dr. Wagner György",
+				"szak": "Mérnökinformatikus BSC",
+				"_id": "8",
+				"_tipus": "gyk"
+			},
+			{
+				"targy": "WebKezel",
+				"idopont": {
+					"nap": "Szerda",
+					"tol": "08",
+					"ig": "10"
+				},
+				"helyszin": "A1/310",
+				"oktato": "Dr. Kovács László",
+				"szak": "Mérnökinformatikus BSC",
+				"_id": "9",
+				"_tipus": "elm"
+			},
+			{
+				"targy": "WebKezel",
+				"idopont": {
+					"nap": "Szerda",
+					"tol": "10",
+					"ig": "12"
+				},
+				"helyszin": "L101",
+				"oktato": "Dr. Bednarik László",
+				"szak": "Mérnökinformatikus BSC",
+				"_id": "10",
+				"_tipus": "gyk"
+			},
+			{
+				"targy": "Valószínűségszámítás és matematikai statisztika",
+				"idopont": {
+					"nap": "Kedd",
+					"tol": "10",
+					"ig": "12"
+				},
+				"helyszin": "E32",
+				"oktato": "?",
+				"szak": "Mérnökinformatikus BSC",
+				"_id": "11",
+				"_tipus": "elm"
+			},
+			{
+				"targy": "Valószínűségszámítás és matematikai statisztika",
+				"idopont": {
+					"nap": "Szerda",
+					"tol": "14",
+					"ig": "16"
+				},
+				"helyszin": "A1/315",
+				"oktato": "?",
+				"szak": "Mérnökinformatikus BSC",
+				"_id": "12",
+				"_tipus": "gyk"
+			}
+		]
+	}
+}
