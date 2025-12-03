@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="bigbox">
+
+        <div class="subheader">
+            <label for="nev">Név:</label>
+            <input type="text" id="nev" name="nev">
+        </div>
+
+        <div class="subheader">
+            <label for="evfolyam">Évfolyam:</label>
+            <input type="text" id="evfolyam" name="evfolyam">
+        </div>
+
+        <div class="subheader">
+            <label for="szak">Szak:</label>
+            <input type="text" id="szak" name="szak">
+        </div>
+
+        <div class="subheader">
+            <label for="email">E-mail cím:</label>
+            <input type="text" id="email" name="email">
+        </div>
+
+        <div class="subheader">
+            <label for="neptun">NEPTUN kód:</label>
+            <input type="text" id="neptun" name="neptun">
+        </div>
+
+        <div class="subheader">
+            <button id="save-btn">Mentés</button>
+        </div>
+    </div>
+        <h2>Keresés:</h2>
+        <div class="subheader">
+            <label for="search">nev:</label>
+            <input type="text" id="search" name="search">
+        </div>
+        <h3>Rendezés:</h3>
+        <div class="subheader">
+            <select id="sorting" name="sorting">
+                <option value="NoSorting">Nincs rendezés</option>
+                <option value="Alphabetic">Név</option>
+                <option value="Year">Évfolyam</option>
+                <option value="Degree">Szak</option>
+                <option value="Address">E-mail</option>
+                <option value="Ncode">NEPTUN kód</option>
+            </select>
+        </div>
+
+        <div class="subheader">
+            <button id="export-btn">Export JSON</button>
+        </div>
+    <div class="bigbox">
+
+    <div class="bigbox">
+        Import JSON:
+        <input type="file" id="import-file" />
+        <button id="import-btn">Import!</button>
+    </div>
+
+    <div class="bigbox">
+        <h1>Hallgatók listája:</h1>
+        <button id="update-btn">Frissítés</button>
+        <div id="students-list">
+            <!-- Table -->
+             <table id="students-table" border="1">
+                <thead>
+                    <tr>
+                        <th>Név</th>
+                        <th>Évfolyam</th>
+                        <th>Szak</th>
+                        <th>E-mail</th>
+                        <th>NEPTUN kód</th>
+                        <th>Műveletek</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Data rows will be inserted here -->
+                </tbody>
+             </table>
+        </div>
+    </div>
+
+    </div>
+    <script>
+        const STORAGE_KEY = 'ecy3ri_students_data';
+        function loadData() {
+            const raw = localStorage.getItem(STORAGE_KEY);
+            return raw ? JSON.parse(raw) : [];
+        }
+
+        function saveData(data) {
+            localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+        }
+
+        function addItem() {
+            const data = loadData();
+            let newItem = {
+                nev: document.getElementById('nev').value,
+                evfolyam: document.getElementById('evfolyam').value,
+            };
+            data.push(newItem);
+            saveData(data);
+        }
+
+        document.getElementById('save-btn').addEventListener('click', addItem);
+        document.getElementById('export-btn').addEventListener('click', () => {
+            const data = loadData();
+            const dataStr = "data:text/json;charset=utf-8," + encodeURIComponent(JSON.stringify(data));
+            const downloadAnchorNode = document.createElement('a');
+            downloadAnchorNode.setAttribute("href", dataStr);
+            downloadAnchorNode.setAttribute("download", "students_data.json");
+            document.body.appendChild(downloadAnchorNode);
+            downloadAnchorNode.click();
+            downloadAnchorNode.remove();
+        });
+
+        document.getElementById('import-btn').addEventListener('click', () => {
+            const fileInput = document.getElementById('import-file');
+            const file = fileInput.files[0];
+            const reader = new FileReader();
+            reader.onload = function(e) {
+                const content = e.target.result;
+                try {
+                    const importedData = JSON.parse(content);
+                    if (Array.isArray(importedData)) {
+                        saveData(importedData);
+                        alert('Import successful!');
+                    } else {
+                        alert('Invalid data format!');
+                    }
+                } catch (err) {
+                    alert('Error parsing JSON: ' + err.message);
+                }
+            };
+            reader.readAsText(file);
+        });
+
+        //sort via the dropdown menu
+
+        document.getElementById('sorting').addEventListener('change', (event) => {
+            const sortBy = event.target.value;
+            let data = loadData();
+            switch(sortBy) {
+                case 'Alphabetic':
+                    data.sort((a, b) => a.nev.localeCompare(b.nev));
+                    break;
+                case 'Year':
+                    data.sort((a, b) => a.evfolyam - b.evfolyam);
+                    break;
+                // Add more sorting cases as needed
+                case 'NoSorting':
+                default:
+                    // No sorting
+                    break;
+            }
+            saveData(data);
+        });
+
+        //update button to refresh the table
+        document.getElementById('update-btn').addEventListener('click', () => {
+            const data = loadData();
+            const tbody = document.querySelector('#students-table tbody');
+            tbody.innerHTML = '';
+            data.forEach(item => {
+                const row = document.createElement('tr');
+                row.innerHTML = `
+                    <td>${item.nev || ''}</td>
+                    <td>${item.evfolyam || ''}</td>
+                    <td>${item.szak || ''}</td>
+                    <td>${item.email || ''}</td>
+                    <td>${item.neptun || ''}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        });
+
+    </script>
+</body>
+</html>
